@@ -16,3 +16,13 @@ get '/named-cat' do
   @name = params[:name]
   erb(:named_cat)
 end
+
+post '/named-cat' do
+  p params
+  @name = params[:name]
+  erb(:named_cat)
+end
+
+get '/form' do
+  erb(:form)
+end
